@@ -1,0 +1,70 @@
+任务一：
+git checkout -b feature-newFunc
+git add .
+git commit -m "Added diary entry for feature work"
+git add .
+git commit -m "Added another diary entry for feature work"
+git push --set-upstream origin feature-newFunc
+git checkout main
+git merge feature-newFunc
+git push
+
+任务二：
+git checkout -b experiment origin/experiment
+git log
+git checkout main
+git cherry-pick d58314c014e17c0f8091e4f715836e14815e443d
+git push
+
+任务三：
+git checkout -b dev origin/dev
+git log
+git revert HEAD
+git revert 1a5d6d2f1f36d128e6b9a6a2236fdc0d1113638e
+git log
+git status
+git push
+
+任务四：
+git checkout -b feature-upload origin/feature-upload
+git checkout main
+git add frontend/styles.css
+git commit -m "change body font style"
+git push
+git checkout feature-upload
+git diff main feature-upload
+git checkout main
+git merge feature-upload
+git commit -m "merge feature-upload and main"
+git push
+
+任务五:
+git checkout -b documentation origin/documentation
+git log
+git rebase -i  bf1ad18e65b3924d4b41d87ce35ee166ba154dc8
+git log
+git checkout main
+git merge documentation
+git push
+git checkout documentation
+git push --force
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
